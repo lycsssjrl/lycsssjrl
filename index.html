@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lycsss Project Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3e5f5;
+            font-family: 'Arima', cursive;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: #e1bee7;
+        }
+
+        .navbar-brand {
+            color: #6a1b9a;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .hero-section {
+            text-align: center;        
+            padding: 40px 20px;
+            background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-spring-pink-purple-flower-background-picture-image_1024251.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        .hero-section p {
+            font-size: 21px;
+        }
+
+        .buttons-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .btn-custom {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: rgb(255, 255, 255);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-feature1 {
+            background-color: #ba68c8;
+        }
+
+        .btn-feature2 {
+            background-color: #9575cd;
+        }
+
+        .btn-feature3 {
+            background-color: #6a1b9a;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #e1bee7;
+            color: #6a1b9a;
+            width: 100%;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Lycsss Project Vault <3</a>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1>Welcome to My Project Vault!</h1>
+        <p>Unleashing Creativity, One Code at a Time!</p>
+    </div>
+
+    <div class="buttons-section">
+        <h2>Project Features</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-4">
+                    <a href="#" class="btn btn-custom btn-feature1 w-100">
+                        <i class="bi bi-folder-fill"></i> Project 1
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a href="#" class="btn btn-custom btn-feature2 w-100">
+                        <i class="bi bi-folder2-open"></i> Project 2
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <a href="#" class="btn btn-custom btn-feature3 w-100">
+                        <i class="bi bi-folder-plus"></i> Project 3
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">&copy; 2024 Lycsss Project Vault. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
