@@ -6,7 +6,7 @@
     <title>Your Destination</title>
   </head>
   <body>
-  
-    <h1>annyeong</h1>
+    <div class="container">
+      <div class="row
   </body>
 </html>
