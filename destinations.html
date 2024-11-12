@@ -11,126 +11,102 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #9cc2e813;
+        }
+        .container {
+            text-align: center;
+            font-style: "Lucida Handwriting";
         }
         .destination-card {
-            margin: 20px 0;
+            margin: 20px 20px;
+            padding: 50px 20px;
             border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 4px 6px rgb(0, 0, 0);
+            text-align: center;
         }
         .destination-img {
             border-radius: 15px;
-            object-fit: cover;
+            object-fit: auto;
             height: 300px;
-            width: 100%;
+            width: 50%;
         }
         .card-body {
-            text-align: left;
+            margin-left: 20px;
+            padding: 20px 20px;
+            text-align: center;
+        }
+        .destination-img:hover {
+            transform:translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 136, 136, 0.2);
         }
         h2 {
-            margin-bottom: 15px;
+            margin-left: 15px ;
+
         }
-        .destination-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .destination-info img {
-            width: 50%;
-            max-height: 300px;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-        .destination-info .info {
-            width: 45%;
-        }
+        
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center mt-5">Explore the Famous Volcanoes in the Philippines</h1>
+        <h1 class="text-center mt-10">Explore the Famous Volcanoes in the Philippines</h1>
         
         <!-- Destination 1: Mount Mayon -->
         <div class="destination-card">
-            <div class="destination-info row">
-                <div class="info col-md-6">
-                    <h2>Mount Mayon</h2>
-                    <p>Famous for its near-perfect cone shape, Mayon is an active volcano in the Bicol region. It is a popular destination for hikers and adventure seekers.</p>
-                    <p><strong>Activities:</strong> Hiking, Lava Viewing, ATV Rides, and enjoying the view from Legazpi City.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Mayon_Volcano_in_Albay.jpg" alt="Mount Mayon" class="destination-img">
-                </div>
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/545/41/desktop-wallpaper-mayon-volcano-travel-at-philippines-mayon-volcano.jpg" alt="Mount Mayon" class="destination-img">
+            <div class="card-body">
+                <h2>Mount Mayon</h2>
+                <p>Famous for its near-perfect cone shape, Mayon is an active volcano in the Bicol region. It is a popular destination for hikers and adventure seekers.</p>
+                <p><strong>Activities:</strong> Hiking, Lava Viewing, ATV Rides, and enjoying the view from Legazpi City.</p>
             </div>
         </div>
 
         <!-- Destination 2: Taal Volcano -->
         <div class="destination-card">
-            <div class="destination-info row">
-                <div class="info col-md-6">
-                    <h2>Taal Volcano</h2>
-                    <p>Located in the middle of Taal Lake, Taal Volcano is one of the most active in the Philippines. It has a stunning caldera with a small lake inside.</p>
-                    <p><strong>Activities:</strong> Boating to the island, hiking, and exploring the crater lake.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Taal_Volcano_%28Taal_Lake%29.jpg" alt="Taal Volcano" class="destination-img">
-                </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Taal_Volcano_%28Taal_Lake%29.jpg" alt="Taal Volcano" class="destination-img">
+            <div class="card-body">
+                <h2>Taal Volcano</h2>
+                <p>Located in the middle of Taal Lake, Taal Volcano is one of the most active in the Philippines. It has a stunning caldera with a small lake inside.</p>
+                <p><strong>Activities:</strong> Boating to the island, hiking, and exploring the crater lake.</p>
             </div>
         </div>
 
         <!-- Destination 3: Mount Pinatubo -->
         <div class="destination-card">
-            <div class="destination-info row">
-                <div class="info col-md-6">
-                    <h2>Mount Pinatubo</h2>
-                    <p>Pinatubo erupted dramatically in 1991, and today visitors can trek to its crater lake, formed by the eruption, and enjoy its surreal beauty.</p>
-                    <p><strong>Activities:</strong> Trekking to the crater lake, off-road driving, and enjoying the panoramic views.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Mount_Pinatubo_2009.jpg" alt="Mount Pinatubo" class="destination-img">
-                </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Mount_Pinatubo_2009.jpg" alt="Mount Pinatubo" class="destination-img">
+            <div class="card-body">
+                <h2>Mount Pinatubo</h2>
+                <p>Pinatubo erupted dramatically in 1991, and today visitors can trek to its crater lake, formed by the eruption, and enjoy its surreal beauty.</p>
+                <p><strong>Activities:</strong> Trekking to the crater lake, off-road driving, and enjoying the panoramic views.</p>
             </div>
         </div>
 
         <!-- Destination 4: Mount Apo -->
         <div class="destination-card">
-            <div class="destination-info row">
-                <div class="info col-md-6">
-                    <h2>Mount Apo</h2>
-                    <p>The highest mountain in the Philippines, Mount Apo is a popular trekking destination for experienced hikers. It is an active volcano with diverse ecosystems.</p>
-                    <p><strong>Activities:</strong> Hiking, camping, and exploring the diverse flora and fauna.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Mount_Apo.jpg" alt="Mount Apo" class="destination-img">
-                </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Mount_Apo.jpg" alt="Mount Apo" class="destination-img">
+            <div class="card-body">
+                <h2>Mount Apo</h2>
+                <p>The highest mountain in the Philippines, Mount Apo is a popular trekking destination for experienced hikers. It is an active volcano with diverse ecosystems.</p>
+                <p><strong>Activities:</strong> Hiking, camping, and exploring the diverse flora and fauna.</p>
             </div>
         </div>
 
         <!-- Destination 5: Mount Kanlaon -->
         <div class="destination-card">
-            <div class="destination-info row">
-                <div class="info col-md-6">
-                    <h2>Mount Kanlaon</h2>
-                    <p>Located in Negros Island, Kanlaon is an active stratovolcano. It is the highest peak in the Visayas and a popular climbing destination.</p>
-                    <p><strong>Activities:</strong> Hiking, camping, and exploring the nearby waterfalls and hot springs.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Mt._Kanlaon_-_Negros_Oriental.jpg" alt="Mount Kanlaon" class="destination-img">
-                </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Mt._Kanlaon_-_Negros_Oriental.jpg" alt="Mount Kanlaon" class="destination-img">
+            <div class="card-body">
+                <h2>Mount Kanlaon</h2>
+                <p>Located in Negros Island, Kanlaon is an active stratovolcano. It is the highest peak in the Visayas and a popular climbing destination.</p>
+                <p><strong>Activities:</strong> Hiking, camping, and exploring the nearby waterfalls and hot springs.</p>
             </div>
         </div>
 
         <!-- Destination 6: Mount Bulusan -->
         <div class="destination-card">
-            <div class="destination-info row">
-                <div class="info col-md-6">
-                    <h2>Mount Bulusan</h2>
-                    <p>Located in Sorsogon, Mount Bulusan is an active stratovolcano that offers an exciting hike through forests and volcanic terrain. It has an accessible crater lake.</p>
-                    <p><strong>Activities:</strong> Hiking, exploring the volcanic crater lake, and visiting nearby hot springs.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Mt._Bulusan.jpg" alt="Mount Bulusan" class="destination-img">
-                </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Mt._Bulusan.jpg" alt="Mount Bulusan" class="destination-img">
+            <div class="card-body">
+                <h2>Mount Bulusan</h2>
+                <p>Located in Sorsogon, Mount Bulusan is an active stratovolcano that offers an exciting hike through forests and volcanic terrain. It has an accessible crater lake.</p>
+                <p><strong>Activities:</strong> Hiking, exploring the volcanic crater lake, and visiting nearby hot springs.</p>
             </div>
         </div>
 
