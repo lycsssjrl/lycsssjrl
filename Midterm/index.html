@@ -1,9 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Agents Gallery</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url(https://images.wallpapersden.com/image/download/valorant-logo-art_bGZubWuUmZqaraWkpJRobWllrWdpZWU.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: rgb(255, 255, 255);
+    }
+
+    .container h1 {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 60px;
+      text-shadow: 2px 2px 5px rgb(37, 1, 1);
+      color: #ff4655;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      border: none;
+      height: 100%;
+    }
+
+    .card img {
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .card-title {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: #ff4655;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Valorant Agents Gallery</h1>
+    <div id="agentsGallery" class="row g-4">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+    fetch("https://valorant-api.com/v1/agents")
+      .then(response => response.json())
+      .then(data => {
+        const agents = data.data;
+        const gallery = document.getElementById("agentsGallery");
+
+
+        const playableAgents = agents.filter(agent => agent.isPlayableCharacter);
+
+        playableAgents.forEach(agent => {
+          if (agent.displayIcon) {
+            const col = document.createElement("div");
+            col.className = "col-sm-6 col-md-4 col-lg-3";
+
+            const card = `
+          <div class="card">
+            <img src="${agent.displayIcon}" class="card-img-top" alt="${agent.displayName}">
+            <div class="card-body">
+              <h5 class="card-title">${agent.displayName}</h5>
+              <p class="card-text">${agent.description || "No description available."}</p>
+            </div>
+          </div>
+        `;
+            col.innerHTML = card;
+            gallery.appendChild(col);
+          }
+        });
+      })
+      .catch(error => console.error("Error fetching data:", error));
+  </script>
+</body>
+
+</html>
